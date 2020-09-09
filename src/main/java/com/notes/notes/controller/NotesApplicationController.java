@@ -13,12 +13,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.notes.notes.model.NotesModel;
 import com.notes.notes.service.NotesService;
 
 @RestController
+@RequestMapping("/api")
 public class NotesApplicationController {
 	
 	static final Logger log = LoggerFactory.getLogger(NotesApplicationController.class);
